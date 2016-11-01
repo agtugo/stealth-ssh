@@ -1,6 +1,8 @@
 Stealth SSH server using onion service
 ======================================
 
+This fork is intended to work out of the box for ethos distro, but with minimum configuration it should work for all linux based systems.
+======================================
 Tor onion service for your SSH server with password protected onion address.
 
 This onion service cannot be port scanned.
@@ -29,7 +31,7 @@ Similar to autoconfigure.sh but it just show what you need to add in the client 
 ```sh
 $ sudo client_onion_conf.sh
 ```
-For windows you need to install cygwin with ssh, netcat is not in cygwin you need to install it and then add it to the enviroment variables. With linux it is straightforward.
+For windows you need to install cygwin with ssh, netcat is not in cygwin you need to install it and then add it to the enviroment variables. Tor needs a torrc file at C:\Users\----your user here----\AppData\Roaming\tor you can copy that file from here https://svn.torproject.org/svn/tor/tags/tor-0_0_9_5/src/config/torrc.sample.in (or newer) and then add the recommendations from client_onion_conf.sh. With linux it is straightforward.
 
 
 
