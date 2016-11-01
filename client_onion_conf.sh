@@ -11,3 +11,4 @@ echo ""
 echo "Add this line to your /etc/tor/torrc on client side."
 echo "HidServAuth $CONNECTION"
 echo ""
+
