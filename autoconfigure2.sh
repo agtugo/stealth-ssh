@@ -3,13 +3,12 @@
 # Install Tor
 apt update 
 apt install tor
-apt install connect-proxy
 
 # Create hidden service folder
 mkdir -p /var/lib/tor/ssh_onion_service/
 
 #line from the original repository I still do not understand the utility of this command
-#chown -R debian-tor:debian-tor /var/lib/tor/ssh_onion_service/
+chown -R debian-tor:debian-tor /var/lib/tor/ssh_onion_service/
 chmod 0700 /var/lib/tor/ssh_onion_service/
 
 # Add settings for SSH connection
