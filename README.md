@@ -10,11 +10,11 @@ Does not allow anyone else to connect or fingerprint your SSH server.
 Hence no risk of exposing your onion address <=> real IP address because SSH fingerprint matching.
 
 Prerequisites windows:
-Cygwin with ssh
-Netcat (do not forget to add it to environment variables)
-Tor
-Torrc file (from here https://svn.torproject.org/svn/tor/tags/tor-0_0_9_5/src/config/torrc.sample.in (or newer) 
-and paste it to C:\Users\----your user here----\AppData\Roaming\tor\torrc
+- Cygwin with ssh
+- Netcat (do not forget to add it to environment variables)
+- Tor
+- Torrc file (from here https://svn.torproject.org/svn/tor/tags/tor-0_0_9_5/src/config/torrc.sample.in (or newer) 
+ and paste it to C:\Users\----your user here----\AppData\Roaming\tor\torrc
 
 
 You should read the autoconfigure.sh and execute the lines by hand.
