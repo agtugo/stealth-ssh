@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Install Tor
-apt-get update 
-apt-get install tor
-apt-get install connect-proxy
+apt update 
+apt install tor
+apt install connect-proxy
 
 # Create hidden service folder
 mkdir -p /var/lib/tor/ssh_onion_service/
@@ -24,7 +24,8 @@ echo "HiddenServiceAuthorizeClient stealth $AUTH" >> /etc/tor/torrc
 echo "HiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
 service tor restart
 
-sed -i 's/Port 22/Port 51984/g' /etc/ssh/sshd_config
+#only if you want to change ports
+#sed -i 's/Port 22/Port 51984/g' /etc/ssh/sshd_config
 service ssh restart
 
 # Build examples of .ssh/config and /etc/tor/torrc
