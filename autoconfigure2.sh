@@ -22,11 +22,11 @@ echo "HiddenServiceAuthorizeClient stealth $AUTH" >> /etc/tor/torrc
 #only if you want to change ports
 #echo "HiddenServicePort 22 127.0.0.1:51984" >> /etc/tor/torrc
 echo "HiddenServicePort 22 127.0.0.1:22" >> /etc/tor/torrc
-service tor restart
+sudo /etc/init.d/tor restart
 
 #only if you want to change ports
 #sed -i 's/Port 22/Port 51984/g' /etc/ssh/sshd_config
-service ssh restart
+restart ssh
 
 # Build examples of .ssh/config and /etc/tor/torrc
 echo ""
